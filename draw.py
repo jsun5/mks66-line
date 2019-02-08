@@ -17,11 +17,13 @@ def draw_line( x0, y0, x1, y1, screen, color ):
     if quad is 1:
         A = dy
         B = -dx
-        d = 2A + B
+        d = 2*A + B
         while x < x1:
-            plot(x,y)
+            plot(screen,color,x,y)
             if d>0:
-                y++
-                d+=2B
-            x++
-            d+=2A
+                y+=1
+                d+=2*B
+            x+=1
+            d+=2*A
+    else:
+        pass

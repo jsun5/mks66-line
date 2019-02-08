@@ -41,3 +41,5 @@ def draw_line( x0, y0, x1, y1, screen, color ):
             d+=2*B
     else:
         pass
+    #octants 3-6, we can just change x0,x1
+    #so call draw_line(x1,y1,x0,y0,screen,color)

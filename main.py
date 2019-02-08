@@ -17,5 +17,12 @@ draw_line(20,20,280,50,screen,color)
 draw_line(20,20,280,25,screen,color)
 draw_line(20,20,280,20,screen,color)
 
+#octant 2
+draw_line(300,300,400,400,screen,color)
+draw_line(300,300,400,500,screen,color)
+draw_line(300,300,400,600,screen,color)
+draw_line(300,300,300,500,screen,color)
+draw_line(300,300,400,310,screen,color)
+
 display(screen)
 save_extension(screen, 'img.png')

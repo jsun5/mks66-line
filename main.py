@@ -36,5 +36,18 @@ draw_line(300,300,400,151,screen,color)
 draw_line(300,300,400,150,screen,color)
 '''
 
+x = 200
+for i in range(100):
+	draw_line(300,300,x+2*i,400,screen,color)
+y = 200
+for i in range(100):
+    draw_line(300,300,400,y+2*i,screen,color)
+x = 200
+for i in range(100):
+	draw_line(300,300,x+2*i,200,screen,color)
+y = 200
+for i in range(100):
+    draw_line(300,300,200,y+2*i,screen,color)
+
 display(screen)
 save_extension(screen, 'img.png')

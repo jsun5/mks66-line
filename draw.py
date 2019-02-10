@@ -1,6 +1,9 @@
 from display import *
 
 def draw_line( x0, y0, x1, y1, screen, color ):
+    if(x0>x1):
+        draw_line(x1,y1,x0,y0,screen,color)
+        pass
     quad = -1
     dy = (y1-y0)
     dx = (x1-x0)
@@ -18,7 +21,7 @@ def draw_line( x0, y0, x1, y1, screen, color ):
         A = dy
         B = -dx
         d = 2*A + B
-        while x < x1:
+        while x <= x1:
             plot(screen,color,x,y)
             if d>0:
                 y+=1
@@ -40,7 +43,7 @@ def draw_line( x0, y0, x1, y1, screen, color ):
         A = dy
         B = -dx
         d = -2*A + B
-        while x < x1:
+        while x <= x1:
             plot(screen,color,x,y)
             if d<0:
                 y-=1

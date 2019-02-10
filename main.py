@@ -23,9 +23,10 @@ draw_line(300,300,400,500,screen,color)
 draw_line(300,300,400,600,screen,color)
 draw_line(300,300,300,500,screen,color)
 draw_line(300,300,400,310,screen,color)
-'''
+
 #octant 8
 draw_line(300,300,400,400,screen,color)
+draw_line(300,300,400,300,screen,color)
 draw_line(300,300,400,290,screen,color)
 draw_line(300,300,400,260,screen,color)
 draw_line(300,300,400,200,screen,color)
@@ -33,6 +34,7 @@ draw_line(300,300,400,200,screen,color)
 #octant 7
 draw_line(300,300,400,151,screen,color)
 draw_line(300,300,400,150,screen,color)
+'''
 
 display(screen)
 save_extension(screen, 'img.png')

@@ -13,9 +13,7 @@ def draw_line( x0, y0, x1, y1, screen, color ):
     if dy < 0 and dx > 0:
         if dx > abs(dy): quad = 8
         else: quad = 7
-            
-    if quad is -1:
-        pass
+
     if quad is 1:
         A = dy
         B = -dx
@@ -49,7 +47,17 @@ def draw_line( x0, y0, x1, y1, screen, color ):
                 d-=2*B
             x+=1
             d+=2*A
-			
+    if quad is 7:
+        A = dy
+        B = -dx
+        d = -2*B + A
+        while y >= y1:
+            plot(screen,color,x,y)
+            if d<0:
+                x+=1
+                d-=2*A
+            y-=1
+            d+=2*B
     else:
         pass
     #octants 3-6, we can just change x0,x1

@@ -6,7 +6,7 @@ color = [ 0, 255, 0 ]
 
 #for i in range (200):
  #   plot(screen,color,i,i)
-
+'''
 #octant 1
 draw_line(20,20,15,80,screen,color)
 draw_line(20,20,80,80,screen,color)
@@ -23,6 +23,16 @@ draw_line(300,300,400,500,screen,color)
 draw_line(300,300,400,600,screen,color)
 draw_line(300,300,300,500,screen,color)
 draw_line(300,300,400,310,screen,color)
+'''
+#octant 8
+draw_line(300,300,400,400,screen,color)
+draw_line(300,300,400,290,screen,color)
+draw_line(300,300,400,260,screen,color)
+draw_line(300,300,400,200,screen,color)
+
+#octant 7
+draw_line(300,300,400,151,screen,color)
+draw_line(300,300,400,150,screen,color)
 
 display(screen)
 save_extension(screen, 'img.png')

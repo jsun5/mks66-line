@@ -6,48 +6,28 @@ color = [ 0, 255, 0 ]
 
 #for i in range (200):
  #   plot(screen,color,i,i)
-'''
-#octant 1
-draw_line(20,20,15,80,screen,color)
-draw_line(20,20,80,80,screen,color)
-draw_line(20,20,85,80,screen,color)
-draw_line(20,20,140,80,screen,color)
-draw_line(20,20,280,80,screen,color)
-draw_line(20,20,280,50,screen,color)
-draw_line(20,20,280,25,screen,color)
-draw_line(20,20,280,20,screen,color)
-
-#octant 2
-draw_line(300,300,400,400,screen,color)
-draw_line(300,300,400,500,screen,color)
-draw_line(300,300,400,600,screen,color)
-draw_line(300,300,300,500,screen,color)
-draw_line(300,300,400,310,screen,color)
-
-#octant 8
-draw_line(300,300,400,400,screen,color)
-draw_line(300,300,400,300,screen,color)
-draw_line(300,300,400,290,screen,color)
-draw_line(300,300,400,260,screen,color)
-draw_line(300,300,400,200,screen,color)
-
-#octant 7
-draw_line(300,300,400,151,screen,color)
-draw_line(300,300,400,150,screen,color)
-'''
 
 x = 200
-for i in range(100):
-	draw_line(300,300,x+2*i,400,screen,color)
+for i in range(30):
+    draw_line(300,300,x+8*i,400,screen,color)
 y = 200
-for i in range(100):
-    draw_line(300,300,400,y+2*i,screen,color)
+for i in range(30):
+    draw_line(300,300,400,y+8*i,screen,color)
 x = 200
-for i in range(100):
-	draw_line(300,300,x+2*i,200,screen,color)
+for i in range(30):
+    draw_line(300,300,x+8*i,200,screen,color)
 y = 200
-for i in range(100):
-    draw_line(300,300,200,y+2*i,screen,color)
+for i in range(30):
+    draw_line(300,300,200,y+8*i,screen,color)
+
+draw_line(20,20,20,40,screen,color)
+draw_line(20,20,40,40,screen,color)
+draw_line(20,20,40,20,screen,color)
+draw_line(20,20,40,0,screen,color)
+draw_line(20,20,20,0,screen,color)
+draw_line(20,20,0,0,screen,color)
+draw_line(20,20,0,20,screen,color)
+draw_line(20,20,0,40,screen,color)
 
 display(screen)
 save_extension(screen, 'img.png')
